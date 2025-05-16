@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+  </head>
+  <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="toggle-btn">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="assets/logo.PNG" alt="Youtube Image Logo" class="logo" />
+
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="search..." />
+        <button class="search-btn">
+          <img src="assets/icons/search.PNG" alt="Search Icon" />
+        </button>
+      </div>
+
+      <div class="user-options">
+        <img src="assets/icons/video.PNG" alt="" class="icon" />
+        <img src="assets/icons/grid.PNG" alt="" class="icon" />
+        <img src="assets/icons/bell.PNG" alt="" class="icon" />
+        <div class="user-dp">
+          <img src="assets/profile-pic.png" alt="" />
         </div>
-        <img src="assets/logo.PNG" alt="Youtube Image Logo" class="logo">
+      </div>
     </nav>
 
-    <div class="search-box">
-        <input type="text" class="search-bar" placeholder="search...">
-        <button class="search-btn">
-            <img src="assets/icons/search.PNG" alt="Search Icon">
-        </button>
+    <!-- Sidebar Section -->
+    <div class="side-bar">
+      <a href="#" class="links active"
+        ><img src="assets/icons/home.PNG" alt="home icon" />Home</a
+      >
+      <a href="#" class="links"
+        ><img src="assets/icons/explore.PNG" alt="explore icon" />Explore</a
+      >
+      <a href="#" class="links"
+        ><img
+          src="assets/icons/subscription.PNG"
+          alt="subscription icon"
+        />Subscription</a
+      >
+      <hr class="seperator" />
+      <a href="#" class="links"
+        ><img src="assets/icons/library.PNG" alt="library icon" />Library</a
+      >
+      <a href="#" class="links"
+        ><img src="assets/icons/history.PNG" alt="history icon" />History</a
+      >
+      <a href="#" class="links"
+        ><img src="assets/icons/video.PNG" alt="video icon" />Your Video</a
+      >
+      <a href="#" class="links"
+        ><img src="assets/icons/watch-later.PNG" alt="watch icon" />Watch
+        Later</a
+      >
+      <a href="#" class="links"
+        ><img src="assets/icons/liked video.PNG" alt="linked icon" />Liked
+        Video</a
+      >
+      <a href="#" class="links"
+        ><img src="assets/icons/show more.PNG" alt="show-more icon" />Show
+        More</a
+      >
     </div>
-
-    <div class="user-options">
-        <img src="assets/icons/video.PNG" alt="">
-        <img src="assets/icons/grid.PNG" alt="">
-        <img src="assets/icons/bell.PNG" alt="">
-        <div class="user-dp">
-            <img src="assets/profile-pic.png" alt="">
-        </div>
-    </div>
-</body>
+  </body>
 </html>
