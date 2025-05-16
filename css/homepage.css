@@ -1,0 +1,78 @@
+.video-container{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+}
+
+.video .thumbnail{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.video .content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video .channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+}
+
+.views-time{
+    font-size: 14px;
+    color: grey;
+}
+
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
