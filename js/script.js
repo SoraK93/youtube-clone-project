@@ -72,7 +72,7 @@ function loadVideos() {
     videoDiv.innerHTML = `
         <img src="${video.thumbnail}" class="thumbnail" alt="video thumbnail" >
         <div class="content">
-            <img src="${video.channelIcon}" class="channed-icon" alt="">
+            <img src="${video.channelIcon}" class="channel-icon" alt="">
             <div class="info">
                 <h4 class="title">${video.title}</h4>
                 <p class="channel-name">${video.channelName}</p>
